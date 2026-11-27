@@ -37,10 +37,10 @@ if not exist "client\node_modules\" (
 
 echo.
 echo [2/4] Starting BuildMaster AI Express Backend on Port 5000...
-start "BuildMaster AI - Backend (Port 5000)" cmd /c "cd /d \"%~dp0server\" && npm.cmd start"
+start "BuildMaster AI - Backend (Port 5000)" cmd /k "cd /d \"%~dp0server\" && npm.cmd start"
 
 echo [3/4] Starting BuildMaster AI React Frontend on Port 5173...
-start "BuildMaster AI - Frontend (Port 5173)" cmd /c "cd /d \"%~dp0client\" && npm.cmd run dev"
+start "BuildMaster AI - Frontend (Port 5173)" cmd /k "cd /d \"%~dp0client\" && npm.cmd run dev"
 
 echo.
 echo [4/4] Initializing local servers...
@@ -56,5 +56,6 @@ echo  - Frontend: http://localhost:5173
 echo  - Backend:  http://localhost:5000/api/health
 echo ======================================================================
 echo.
-ping 127.0.0.1 -n 4 >nul
-exit /b 0
+echo [NOTE] Keep the two opened terminal windows running in background.
+echo You can close this launcher window now.
+pause
