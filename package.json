@@ -1,0 +1,26 @@
+{
+  "name": "domain-specific-chatbot-civil-pm",
+  "version": "1.0.0",
+  "description": "BuildMaster AI - Civil Project Management Chatbot (MERN + ThreeJS + GSAP) for PSEB",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm run dev",
+    "dev": "node -e \"const { spawn } = require('child_process'); spawn('npm.cmd', ['run', 'server'], { stdio: 'inherit', shell: true }); spawn('npm.cmd', ['run', 'client'], { stdio: 'inherit', shell: true });\""
+  },
+  "keywords": [
+    "pseb",
+    "civil-project-management",
+    "threejs",
+    "gsap",
+    "gemini",
+    "chatbot",
+    "mern"
+  ],
+  "author": "Intikhab Alam",
+  "license": "MIT"
+}

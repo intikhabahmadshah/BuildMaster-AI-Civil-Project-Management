@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production Build Artifacts
+dist/
+client/dist/
+
+# Local Environment Variables & Keys
+.env
+.env.local
+.env.*.local
+server/.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Temporary Generator & Build Helper Scripts
+build_assignment_notebook.py
+generate_standalone_notebook.py
+
+# Logs
+*.log
+npm-debug.log*
